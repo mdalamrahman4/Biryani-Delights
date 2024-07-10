@@ -50,7 +50,7 @@ function Cards(props) {
             alt="biryani" />
         </div>
         <div className="p-4">
-          <div className="font-bold mb-2 dark:text-green-100 text-xl uppercase">{data.name}</div>
+          <div className="font-bold short_descriptiont mb-2 dark:text-green-100 text-xl uppercase">{data.name}</div>
           <p className="short_description text-gray-700 dark:text-gray-400 text-base">
             {data.description}
           </p>
