@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-const signup = () => {
+const Signup = () => {
   const router=useRouter();
   const [credentials,setCredentials]=useState({name:"",email:"",password:"",geolocation:""})
   const handleSubmit=async(e)=>{
@@ -23,7 +23,7 @@ const signup = () => {
     if(res.success){
       localStorage.setItem("token",credentials.authToken);
       localStorage.setItem("userEmail",credentials.email);
-      localStorage.setItem("isAdmin",credentials.isAdmin);
+      localStorage.setItem("isAdmin",false);
       router.push("/");
     }
     else{
@@ -93,4 +93,4 @@ const signup = () => {
   )
 }
 
-export default signup
+export default Signup
