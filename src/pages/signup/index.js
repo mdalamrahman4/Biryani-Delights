@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import Link from 'next/link'
-import Router, { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import Head from 'next/head'
 const signup = () => {
   const router=useRouter();
