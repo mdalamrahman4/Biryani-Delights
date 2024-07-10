@@ -1,4 +1,4 @@
 export const baseUrl =
   process.env.NODE_ENV === "production"
-    ? process.env.NEXT_PUBLIC_BASE_URL
+    ? "https://biryanidelights-ehxsyys41-mdalamrahman4s-projects.vercel.app/"
     : "http://localhost:3000/";
