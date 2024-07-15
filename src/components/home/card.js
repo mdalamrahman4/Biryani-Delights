@@ -45,12 +45,13 @@ function Cards(props) {
         <div className="relative w-full h-80">
           <Image
             src={data.img}
-            layout="fill"
+            fill
             objectFit="cover"
-            alt="biryani" />
+            alt="biryani" 
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"/>
         </div>
         <div className="p-4">
-          <div className="font-bold short_descriptiont mb-2 dark:text-green-100 text-xl uppercase">{data.name}</div>
+          <div className="font-bold short_descriptiont mb-2 dark:text-green-100 text-black text-xl uppercase">{data.name}</div>
           <p className="short_description text-gray-700 dark:text-gray-400 text-base">
             {data.description}
           </p>
